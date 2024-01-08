@@ -1,0 +1,7 @@
+{
+  "appsecret": "controlprint-highresprinter-greenply-hr-printer-app",
+  "verifyToken": "eyJhbGciOiJIUzI1NiJ9.Y29udHJvbHByaW50LWhpZ2hyZXNwcmludGVyLWdyZWVucGx5LWhyLXByaW50ZXItYXBw.cvd6YZt1OxfZ1L_U_z-rhyvaOicEG0qcErcUoBQwDbE",
+  "baseUrl": "http://3.111.34.145:3030",
+  "serverAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.E7Q2k840Sp7uB2Uz7xwNcHw5Hi2xE5qadHOS8Sjom2U",
+  "dbName": "aprsaa-medical-api"
+}
