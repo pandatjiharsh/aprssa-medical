@@ -8,6 +8,7 @@ const schedule = require("node-schedule");
 const jwt = require("jsonwebtoken");
 const DB = require("./DB/db.connection.js");
 const config = require("./config.json");
+const fileUpload = require("express-fileupload");
 const mainRoute = require("./module/mainRouter.js");
 // const logger = require("./utils/loggers.js");
 
@@ -15,7 +16,7 @@ global.con = DB.con;
 
 // Serve Swagger UI at /api-docs
 // app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
+app.use(fileUpload());
 app.use(
   bodyParser.urlencoded({
     limit: "50mb",
@@ -69,7 +70,6 @@ const auth = async function (req, res, next) {
 
 // Apply auth middleware before defining routes that require authentication
 app.use("*/aa", auth, mainRoute);
-
 app.get("/", async (req, res) => {
   res.send("Ayurved apis");
   console.log("object123456789");
